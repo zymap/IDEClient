@@ -3,5 +3,5 @@ project(IDEClient)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES main.cpp IDEinterface/ideclient.cpp IDEinterface/ideclient.h pojo/ServerArgs.cpp pojo/ServerArgs.h)
+set(SOURCE_FILES main.cpp IDEinterface/ideclient.cpp IDEinterface/ideclient.h pojo/ServerArgs.h IDEinterface/fileopt.cpp test/MyTest.cpp test/MyTest.h)
 add_executable(IDEClient ${SOURCE_FILES})

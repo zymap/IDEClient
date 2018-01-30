@@ -1,12 +1,14 @@
 #include <iostream>
 
-//extern class ServerArgs;
+using namespace std;
+#define url ""
+
+extern int read(string local_url);
 
 int main() {
-    ServerArgs *serverArgs = new ServerArgs();
-    serverArgs.getServer_name();
 
 
+    read("../testFile/a.txt");
 
 
     std::cout << "Hello, World!" << std::endl;
