@@ -21,14 +21,75 @@
 
 using namespace std;
 
-struct ServerArgs {
+
+class ServerArgs {
+private:
     string server_name;
     string service_url;
+    string service_startshell;
     int overwrite;
     string time;
     int type;
-    string environment;
+//    string environment;
+public:
+
+
+    const string &getServer_name() const {
+        return server_name;
+    }
+
+    void setServer_name(const string &server_name) {
+        ServerArgs::server_name = server_name;
+    }
+
+    const string &getService_url() const {
+        return service_url;
+    }
+
+    void setService_url(const string &service_url) {
+        ServerArgs::service_url = service_url;
+    }
+
+    int getOverwrite() const {
+        return overwrite;
+    }
+
+    void setOverwrite(int overwrite) {
+        ServerArgs::overwrite = overwrite;
+    }
+
+    const string &getTime() const {
+        return time;
+    }
+
+    void setTime(const string &time) {
+        ServerArgs::time = time;
+    }
+
+    int getType() const {
+        return type;
+    }
+
+    void setType(int type) {
+        ServerArgs::type = type;
+    }
+
+    const string &getStartshell() const {
+        return service_startshell;
+    }
+
+    void setStartshell(const string &startshell) {
+        ServerArgs::service_startshell = startshell;
+    }
 };
+//struct ServerArgs {
+//    string server_name;
+//    string service_url;
+//    int overwrite;
+//    string time;
+//    int type;
+//    string environment;
+//};
 
 
 
